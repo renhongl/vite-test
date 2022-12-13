@@ -1,2 +1,0 @@
-# vite-test
-vite-test
