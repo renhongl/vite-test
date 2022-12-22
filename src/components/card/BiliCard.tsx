@@ -12,6 +12,7 @@ export enum ContentType {
 }
 
 export interface IBiliCard {
+    id: number
     title: string
     author: string
     date: string
@@ -23,6 +24,7 @@ export interface IBiliCard {
 }
 
 const defaultData = {
+    id: 1,
     title: '世界杯决赛上演帽子戏法，姆巴佩赢得了这个世界的尊重吗',
     author: '巴黎姆学院',
     date: '12-5',
