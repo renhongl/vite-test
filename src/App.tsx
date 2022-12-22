@@ -1,16 +1,21 @@
-import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
 import './App.css'
+import Onboarding from './views/Onboarding'
+import styled from '@emotion/styled'
+import { BrowserRouter } from 'react-router-dom'
+import UnAuthApps from './routes/unAuthApps'
 
 function App() {
-    const [count, setCount] = useState(0)
-    console.log('test')
-
     return (
-        <div className='App'>
-            <h1>App</h1>
-        </div>
+        <BrowserRouter>
+            <UnAuthApps />
+        </BrowserRouter>
     )
 }
 
 export default App
+
+const Container = styled.div`
+    width: 100%;
+    height: 100%;
+`
