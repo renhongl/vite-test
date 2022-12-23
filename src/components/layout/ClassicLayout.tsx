@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Header } from './Header'
+import { Header } from '../header'
 import styled from '@emotion/styled'
 
 export function ClassicLayout({ children }: { children: ReactNode }) {

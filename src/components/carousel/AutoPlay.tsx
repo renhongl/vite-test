@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React, { useEffect, useState } from 'react'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
-import { PacMan } from '../PacMan'
+import { PacMan } from '../button'
 
 export interface Data {
     id: number

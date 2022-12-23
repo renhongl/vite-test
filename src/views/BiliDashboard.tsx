@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import { BiliCard } from '../components/card'
-import { ClassicLayout } from '../components/lib'
+import { ClassicLayout } from '../components/layout'
 import { cardList, carouselList } from './mockData'
 import { AutoPlay } from '../components/carousel'
 
