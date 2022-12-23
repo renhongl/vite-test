@@ -1,15 +1,16 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import { BiliCard } from '../components/card'
-import { AutoPlay, ClassicLayout } from '../components/lib'
-import { cardList } from './mockData'
+import { ClassicLayout } from '../components/lib'
+import { cardList, carouselList } from './mockData'
+import { AutoPlay } from '../components/carousel'
 
 export default function BiliDashboard() {
     return (
         <ClassicLayout>
             <Main>
                 <AutoCon>
-                    <AutoPlay />
+                    <AutoPlay data={carouselList} auto={true} />
                 </AutoCon>
                 {cardList.slice(0, 11).map((item) => (
                     <BiliCard key={item.id} data={item} />

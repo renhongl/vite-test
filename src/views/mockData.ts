@@ -1,5 +1,53 @@
 import { ContentType, IBiliCard } from './../components/card/BiliCard'
 
+export const carouselList = [
+    {
+        id: 1,
+        url: 'https://i.pravatar.cc/501',
+        title: '下班后，这才是我的生活111',
+    },
+    {
+        id: 2,
+        url: 'https://i.pravatar.cc/502',
+        title: '下班后，这才是我的生活222',
+    },
+    {
+        id: 3,
+        url: 'https://i.pravatar.cc/503',
+        title: '下班后，这才是我的生活333',
+    },
+    {
+        id: 4,
+        url: 'https://i.pravatar.cc/504',
+        title: '下班后，这才是我的生活444',
+    },
+    {
+        id: 5,
+        url: 'https://i.pravatar.cc/505',
+        title: '下班后，这才是我的生活555',
+    },
+    {
+        id: 6,
+        url: 'https://i.pravatar.cc/506',
+        title: '下班后，这才是我的生活666',
+    },
+    {
+        id: 7,
+        url: 'https://i.pravatar.cc/507',
+        title: '下班后，这才是我的生活777',
+    },
+    {
+        id: 8,
+        url: 'https://i.pravatar.cc/508',
+        title: '下班后，这才是我的生活888',
+    },
+    {
+        id: 9,
+        url: 'https://i.pravatar.cc/509',
+        title: '下班后，这才是我的生活999',
+    },
+]
+
 export const cardList: IBiliCard[] = [
     {
         id: 1,

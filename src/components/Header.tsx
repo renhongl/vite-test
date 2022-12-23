@@ -148,7 +148,7 @@ const ProItem = styled.div`
         font-size: 12px;
     }
     svg {
-        font-size: 25px;
+        font-size: 22px;
     }
     &:hover svg {
         animation: ${jump} 0.2s ease-in-out;
@@ -212,7 +212,7 @@ const Navi = styled.div`
 const Logo = styled.div`
     background-image: url(bili.png);
     width: 200px;
-    height: 70px;
+    height: 50px;
     -webkit-background-size: contain;
     background-size: contain;
     -webkit-background-position: center center;
