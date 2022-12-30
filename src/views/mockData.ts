@@ -1,4 +1,27 @@
-import { ContentType, IBiliCard } from './../components/card/BiliCard'
+import { ContentType } from './../components/card/BiliCard'
+
+export const subtitleList = [
+    {
+        id: 1,
+        text: '周一',
+    },
+    {
+        id: 2,
+        text: '周二',
+    },
+    {
+        id: 3,
+        text: '周三',
+    },
+    {
+        id: 4,
+        text: '周四',
+    },
+    {
+        id: 5,
+        text: '周五',
+    },
+]
 
 export const carouselList = [
     {
@@ -48,7 +71,7 @@ export const carouselList = [
     },
 ]
 
-export const cardList: IBiliCard[] = [
+export const cardList = [
     {
         id: 1,
         title: '世界杯决赛上演帽子戏法，姆巴佩赢得了这个世界的尊重吗',

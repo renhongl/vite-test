@@ -11,7 +11,7 @@ export enum ContentType {
     SHOW,
 }
 
-export interface IBiliCard {
+export interface BiliCardData {
     id: number
     title: string
     author: string
@@ -35,7 +35,7 @@ const defaultData = {
     img: 'bg.jpg',
 }
 
-export function BiliCard({ data = defaultData }: { data?: IBiliCard }) {
+export function BiliCard({ data = defaultData }: { data?: BiliCardData }) {
     return (
         <Container>
             <Bg url={data.img}>

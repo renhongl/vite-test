@@ -10,34 +10,21 @@ export default function Onboarding() {
             <Content>
                 <Task>
                     <CleanCard title={'入职任务'}>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                        <CircleStep step={3}></CircleStep>
+                        <CircleStep data={{ step: 1 }}></CircleStep>
+                        <CircleStep data={{ step: 2 }}></CircleStep>
+                        <CircleStep data={{ step: 3 }}></CircleStep>
                     </CleanCard>
                     <CleanCard title={'入职信息'}>
-                        <IconStep text='09:30 GMT+8 | 2021年6月13日'></IconStep>
-                        <IconStep text='远程入职'></IconStep>
+                        <IconStep
+                            data={{ text: '09:30 GMT+8 | 2021年6月13日' }}
+                        ></IconStep>
+                        <IconStep data={{ text: '远程入职' }}></IconStep>
                     </CleanCard>
-                    <CleanCard title={'常见问题'}>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                    </CleanCard>
+                    <CleanCard title={'常见问题'}></CleanCard>
                 </Task>
                 <Infor>
-                    <CleanCard title={'个人信息'}>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                    </CleanCard>
-                    <CleanCard title={'帮助中心'}>
-                        <CircleStep step={1}></CircleStep>
-                        <CircleStep step={2}></CircleStep>
-                    </CleanCard>
+                    <CleanCard title={'个人信息'}></CleanCard>
+                    <CleanCard title={'帮助中心'}></CleanCard>
                 </Infor>
             </Content>
         </CleanLayout>

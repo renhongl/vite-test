@@ -1,12 +1,24 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
-export function CircleStep({ step }: { step: number }) {
+export interface CircleStepData {
+    step?: number
+    title?: string
+    desc?: string
+}
+
+const defaultData = {
+    step: 1,
+    title: 'no title',
+    desc: 'no desc',
+}
+
+export function CircleStep({ data = defaultData }: { data?: CircleStepData }) {
     return (
         <Container>
-            <Step>{step}</Step>
-            <Title>填写个人信息</Title>
-            <Desc>即将审核完成</Desc>
+            <Step>{data.step}</Step>
+            <Title>{data.title}</Title>
+            <Desc>{data.desc}</Desc>
         </Container>
     )
 }

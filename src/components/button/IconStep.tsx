@@ -2,17 +2,16 @@ import styled from '@emotion/styled'
 import React, { ReactElement } from 'react'
 import { AiOutlineBug } from 'react-icons/ai'
 
-export function IconStep({
-    Icon = <AiOutlineBug></AiOutlineBug>,
-    text,
-}: {
-    Icon?: ReactElement
+export interface IconStepData {
+    icon?: ReactElement
     text?: string
-}) {
+}
+
+export function IconStep({ data }: { data: IconStepData }) {
     return (
         <Container>
-            <Step>{Icon}</Step>
-            <Title>{text}</Title>
+            <Step>{data.icon}</Step>
+            <Title>{data.text}</Title>
         </Container>
     )
 }

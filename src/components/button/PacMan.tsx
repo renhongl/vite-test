@@ -1,3 +1,4 @@
+import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 import React from 'react'
 
@@ -10,6 +11,24 @@ export function PacMan() {
     )
 }
 
+const bottomEat = keyframes`
+    from {
+            transform: rotate(-45deg);
+        }
+    to {
+        transform: rotate(10deg);
+    }
+`
+
+const topEat = keyframes`
+    from {
+            transform: rotate(45deg);
+        }
+    to {
+        transform: rotate(-10deg);
+    }
+`
+
 const Bottom = styled.div`
     width: 0;
     height: 0;
@@ -21,15 +40,7 @@ const Bottom = styled.div`
     left: 0;
     top: 0;
     transform: rotate(-45deg);
-    animation: rotate 0.5s linear 2;
-    @keyframes rotate {
-        from {
-            transform: rotate(-45deg);
-        }
-        to {
-            transform: rotate(10deg);
-        }
-    }
+    animation: ${bottomEat} 0.5s linear 2;
 `
 
 const Top = styled.div`
@@ -43,15 +54,7 @@ const Top = styled.div`
     left: 0;
     top: 0;
     transform: rotate(45deg);
-    animation: rotate2 0.5s linear 2;
-    @keyframes rotate2 {
-        from {
-            transform: rotate(45deg);
-        }
-        to {
-            transform: rotate(-10deg);
-        }
-    }
+    animation: ${topEat} 0.5s linear 2;
 `
 
 const Container = styled.div`

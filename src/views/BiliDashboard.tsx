@@ -2,8 +2,9 @@ import styled from '@emotion/styled'
 import React from 'react'
 import { BiliCard } from '../components/card'
 import { ClassicLayout } from '../components/layout'
-import { cardList, carouselList } from './mockData'
+import { cardList, carouselList, subtitleList } from './mockData'
 import { AutoPlay } from '../components/carousel'
+import { SubTitle } from '../components/header'
 
 export default function BiliDashboard() {
     return (
@@ -17,6 +18,7 @@ export default function BiliDashboard() {
                 ))}
             </Main>
             <Line></Line>
+            <SubTitle data={subtitleList}></SubTitle>
             <Flow>
                 {cardList.map((item) => (
                     <BiliCard key={item.id} data={item} />
